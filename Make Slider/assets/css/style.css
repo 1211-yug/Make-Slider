@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.arrow {
+    padding: 12px;
+    background: rgba(37, 37, 37, 0.521);
+    border-radius: 50%;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(105, 105, 105, 0.15);
+    object-fit: contain;
+    height: clamp(45px, 8vw, 65px);
+    width: clamp(45px, 8vw, 65px);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.137);
+}
+
+.left {
+    left: 20px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.left:hover {
+    transform: translateY(-50%) rotate(180deg) scale(1.1);
+}
+
+.right {
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.right:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+.fram {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, .5);
+    border-radius: 12px;
+}
+
+.slider {
+    display: flex;
+    transition: all 1s ease;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    flex-shrink: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    max-width: 50%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 6%;
+    padding: 20px 30px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.slide-content h3 {
+    font-size: clamp(16px, 4vw, 24px);
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.slide-content p {
+    font-size: clamp(11px, 2.5vw, 14px);
+    line-height: 1.4;
+}
