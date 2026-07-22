@@ -75,7 +75,7 @@ Image-Slider/
 
 ## 🔗 Live Demo
 
-👉 https://your-live-link.netlify.app
+👉 [https://your-live-link.netlify.app](https://slider-img-6.netlify.app/)
 
 ---
 
