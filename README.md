@@ -47,8 +47,7 @@ Image-Slider/
 │          dubai_image.jpg
 │          italy_image.jpg
 │          japan_image.jpg
-│
-└── README.md
+
 ```
 
 ---
